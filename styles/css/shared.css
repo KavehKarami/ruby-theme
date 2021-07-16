@@ -4,11 +4,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.w-70px {
+/* --------------------------------- Navbar --------------------------------- */
+.logo {
   width: 70px;
 }
 
-/* --------------------------------- Navbar --------------------------------- */
 #hamberger-menu {
   display: flex;
   align-items: flex-end;
