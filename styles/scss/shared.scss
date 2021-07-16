@@ -1,3 +1,31 @@
+/* --------------------------------- general -------------------------------- */
 body {
   background-color: #fff8f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.w-70px {
+  width: 70px;
+}
+
+/* --------------------------------- Navbar --------------------------------- */
+#hamberger-menu {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+
+  .line {
+    height: 5px;
+    background: #fc6e71;
+    border-radius: 15px;
+  }
+
+  .line-1 {
+    width: 30px;
+    margin-bottom: 9px;
+  }
+  .line-2 {
+    width: 17px;
+  }
 }
