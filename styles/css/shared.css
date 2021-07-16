@@ -4,9 +4,30 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.btn-octagonal {
+  clip-path: polygon(10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
+  -webkit-clip-path: polygon(10% 0, 90% 0, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0% 80%, 0% 20%);
+  padding: 5px 20px;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+  background-color: #ff7779;
+  border-color: #ff7779;
+  box-shadow: none;
+}
+
 /* --------------------------------- Navbar --------------------------------- */
 .logo {
   width: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 120px;
+  }
 }
 
 #hamberger-menu {
@@ -18,7 +39,7 @@ body {
 }
 
 #hamberger-menu .line {
-  height: 5px;
+  height: 4px;
   background: #fc6e71;
   border-radius: 15px;
 }
@@ -30,4 +51,33 @@ body {
 
 #hamberger-menu .line-2 {
   width: 17px;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.37;
+  color: #0c203b;
+}
+
+.nav-link:hover {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.37;
+  color: #0c203b;
+}
+
+.nav-link.active {
+  position: relative;
+}
+
+.nav-link.active:before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 10px);
+  height: 2px;
+  background-color: #fc6e71;
+  border-radius: 15px;
+  bottom: -3px;
+  left: -5px;
 }

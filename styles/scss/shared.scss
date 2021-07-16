@@ -1,12 +1,43 @@
+@import "./variables";
+@import "./mixins";
+
 /* --------------------------------- general -------------------------------- */
 body {
-  background-color: #fff8f8;
+  background-color: $bg-body;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-octagonal {
+  @include clipPath(
+    polygon(
+      10% 0,
+      90% 0,
+      100% 20%,
+      100% 80%,
+      90% 100%,
+      10% 100%,
+      0% 80%,
+      0% 20%
+    )
+  );
+  padding: 5px 20px;
+}
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+  background-color: $danger-color;
+  border-color: $danger-color;
+  box-shadow: none;
 }
 
 /* --------------------------------- Navbar --------------------------------- */
 .logo {
   width: 70px;
+  @include bp-md {
+    width: 120px;
+  }
 }
 
 #hamberger-menu {
@@ -17,8 +48,8 @@ body {
   cursor: pointer;
 
   .line {
-    height: 5px;
-    background: #fc6e71;
+    height: 4px;
+    background: $line-colors;
     border-radius: 15px;
   }
 
@@ -28,5 +59,28 @@ body {
   }
   .line-2 {
     width: 17px;
+  }
+}
+
+.nav-link {
+  // REVIEW: font in zeplin is 19
+  @include font(15px, normal, 1.37, $nav-link-color);
+
+  &:hover {
+    @include font(15px, normal, 1.37, $nav-link-color);
+  }
+
+  &.active {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 10px);
+      height: 2px;
+      background-color: $line-colors;
+      border-radius: 15px;
+      bottom: -3px;
+      left: -5px;
+    }
   }
 }

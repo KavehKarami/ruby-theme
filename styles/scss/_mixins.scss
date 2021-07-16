@@ -1,0 +1,97 @@
+@mixin font($font-size, $font-weight, $line-height, $font-color: #fff) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $font-color;
+}
+
+@mixin bgImg($bg-img, $bg-repeat: no-repeat, $bg-position: 0% 0%) {
+  background-image: $bg-img;
+  -moz-background-image: $bg-img;
+  -webkit-background-image: $bg-img;
+  -o-background-image: $bg-img;
+  background-repeat: $bg-repeat;
+  background-position: $bg-position;
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin transition($transition) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
+@mixin keyframes($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin clipPath($clipPath-prop) {
+  clip-path: $clipPath-prop;
+  -webkit-clip-path: $clipPath-prop;
+}
+@mixin animation($animation-prop) {
+  animation: $animation-prop;
+  -webkit-animation: $animation-prop;
+  -moz-animation: $animation-prop;
+  -o-animation: $animation-prop;
+}
+@mixin animationDelay($animation-delay) {
+  animation-delay: $animation-delay;
+  -webkit-animation-delay: $animation-delay;
+  -moz-animation-delay: $animation-delay;
+  -o-animation-delay: $animation-delay;
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+@mixin bp-sm {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin bp-md {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin bp-lg {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin bp-xl {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
