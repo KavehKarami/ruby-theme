@@ -32,6 +32,10 @@ body {
   box-shadow: none;
 }
 
+.text-danger {
+  color: $danger-color !important;
+}
+
 /* --------------------------------- Navbar --------------------------------- */
 .logo {
   width: 70px;

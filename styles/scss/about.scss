@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./mixins";
+
+.about-text {
+  @include font(14px, normal, 19px, #000);
+
+  @include bp-md {
+    @include font(20px, normal, 32px, #000);
+  }
+}

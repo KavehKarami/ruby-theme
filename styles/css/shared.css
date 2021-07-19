@@ -19,6 +19,10 @@ body {
   box-shadow: none;
 }
 
+.text-danger {
+  color: #ff7779 !important;
+}
+
 /* --------------------------------- Navbar --------------------------------- */
 .logo {
   width: 70px;
