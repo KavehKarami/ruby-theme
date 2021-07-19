@@ -91,3 +91,41 @@ body {
   bottom: -3px;
   left: -5px;
 }
+
+/* --------------------------------- discuss -------------------------------- */
+@media only screen and (min-width: 768px) {
+  .discuss-section {
+    margin-top: 10rem !important;
+  }
+}
+
+.discuss-text-box {
+  position: relative;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #0f141a;
+  text-align: center;
+}
+
+.discuss-text-box:before {
+  position: absolute;
+  left: -58px;
+  content: "";
+  background-image: url("./../../images/double-stars-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 38px;
+  height: 38px;
+}
+
+.discuss-text-box:after {
+  position: absolute;
+  right: -41px;
+  content: "";
+  background-image: url("./../../images/star-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 21px;
+  height: 21px;
+}
