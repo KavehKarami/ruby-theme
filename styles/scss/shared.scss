@@ -36,6 +36,11 @@ body {
   color: $danger-color !important;
 }
 
+.navbar-nav {
+  flex-grow: 0.4;
+  justify-content: space-between;
+}
+
 /* --------------------------------- Navbar --------------------------------- */
 .logo {
   width: 70px;
