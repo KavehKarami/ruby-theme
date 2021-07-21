@@ -1,3 +1,751 @@
-<ul>
-  <li><a href="./about-us.html">About Us</a></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruby on Rails</title>
+    <link href="styles/vendors/bootstrap5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/shared.css" type="text/css" />
+    <link rel="stylesheet" href="styles/css/landing.css" type="text/css" />
+  </head>
+  <body>
+    <!-- ------------------------------- Navbar -------------------------------- -->
+    <nav class="navbar">
+      <div class="container px-4">
+        <a class="navbar-brand logo" href="./index.html">
+          <img src="./images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+
+        <div
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobile-menu"
+          aria-controls="mobile-menu"
+          id="hamberger-menu"
+          class="d-md-none"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </div>
+
+        <div class="d-none d-md-flex flex-md-row navbar-nav">
+          <a class="me-4 nav-link" href="./services.html">Services</a>
+          <a class="me-4 nav-link" href="./blog.html">Blog</a>
+          <a class="me-4 nav-link" href="./contact.html">Contact us</a>
+          <a class="me-4 nav-link" href="./about-us.html">About us</a>
+          <button
+            class="btn btn-octagonal btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#getInTouchModal"
+          >
+            Get in touch!
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NOTE: Mobile Menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobile-menu"
+      aria-labelledby="monile-menu-header"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+    >
+      <div class="offcanvas-header">
+        <a
+          href="./index.html"
+          class="offcanvas-title text-decoration-none"
+          id="monile-menu-header"
+        >
+          <img
+            width="132px"
+            class="img-fluid"
+            src="./images/logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- Intro Section ---------------------------- -->
+    <section class="container landing-intro mt-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-7">
+          <div class="intro-content text-center text-md-start mb-md-5">
+            <h1 class="h5 mb-3">
+              <span class="text-danger">Ruby on Rails</span>
+              <span class="text-dark">Development Company</span>
+            </h1>
+            <p class="describe text-blue-dark fw-600">
+              Our passion is turning your
+              <span class="line-border">ideas</span> into
+              <span class="line-border">reality!</span>
+            </p>
+          </div>
+          <!-- NOTE: show this element only for Desktop -->
+          <div class="d-none d-md-block">
+            <div class="mb-4 mb-md-2">
+              <div
+                class="info-paragraph mb-3 fw-600 text-blue-dark text-center text-md-start mb-md-5"
+              >
+                We provide all types of businesses and individuals with Ruby on
+                Rails products.
+              </div>
+              <div
+                class="fw-600 text-blue-dark text-center text-md-start mt-md-4"
+              >
+                How can we help you?
+              </div>
+            </div>
+
+            <div class="my-5 d-flex justify-content-start align-items-center">
+              <button
+                class="me-2 btn btn-sm btn-outline-octagonal btn-danger min-width-180px mb-3"
+              >
+                <div
+                  class="px-4 py-2 btn-outline-octagonal-content fw-600 text-blue-dark"
+                >
+                  I need a developer
+                </div>
+              </button>
+
+              <button
+                class="mx-2 btn btn-sm btn-outline-octagonal btn-danger min-width-180px mb-3"
+              >
+                <div
+                  class="px-4 py-2 btn-outline-octagonal-content fw-600 text-blue-dark"
+                >
+                  I need a team
+                </div>
+              </button>
+
+              <button
+                class="mx-2 btn btn-sm btn-outline-octagonal btn-danger min-width-180px mb-3"
+              >
+                <div
+                  class="px-4 py-2 btn-outline-octagonal-content fw-600 text-blue-dark"
+                >
+                  I need a product
+                </div>
+              </button>
+            </div>
+
+            <a href="#main" class="text-decoration-none">
+              <img width="32px" src="./images/mouse.png" alt="" />
+              <span class="fw-600 text-blue-dark">Scroll to continue</span>
+            </a>
+          </div>
+          <!-- ---------------------------------------- -->
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-5 px-5">
+          <img class="img-fluid" src="./images/landing-main.png" alt="" />
+        </div>
+
+        <!-- NOTE: show this element only for mobile -->
+        <div class="col-12 my-5 d-md-none">
+          <div class="mb-4">
+            <div class="mb-3 fw-600 text-blue-dark text-center">
+              We provide all types of businesses and individuals with Ruby on
+              Rails products.
+            </div>
+            <div class="fw-600 text-blue-dark text-center">
+              How can we help you?
+            </div>
+          </div>
+
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <button
+              class="btn btn-sm btn-outline-octagonal btn-danger min-width-180px mb-3"
+            >
+              <div
+                class="px-4 py-2 btn-outline-octagonal-content fw-600 text-blue-dark"
+              >
+                I need a developer
+              </div>
+            </button>
+
+            <button
+              class="btn btn-sm btn-outline-octagonal btn-danger min-width-180px mb-3"
+            >
+              <div
+                class="px-4 py-2 btn-outline-octagonal-content fw-600 text-blue-dark"
+              >
+                I need a team
+              </div>
+            </button>
+
+            <button
+              class="btn btn-sm btn-outline-octagonal btn-danger min-width-180px mb-3"
+            >
+              <div
+                class="px-4 py-2 btn-outline-octagonal-content fw-600 text-blue-dark"
+              >
+                I need a product
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- --------------------------------------- -->
+      </div>
+
+      <div class="intro-btn-box">
+        <div class="intro-btn-icons icon-bx-1"></div>
+        <div class="intro-btn-icons icon-bx-2"></div>
+
+        <div class="intro-btn btn-low-octagonal btn btn-danger">
+          We make it easier for everybody to access their desired digital
+          products, with very high standards and powerful teams.
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- Main Section ----------------------------- -->
+    <!-- NOTE: show this Section only for mobile -->
+    <section class="contaienr bg-white mt-n5 pt-120px d-md-none pb-5">
+      <div class="container">
+        <div class="row justify-content-center my-4">
+          <div class="provide-man-box">
+            <div class="text-white mt-4">
+              We provide you with the best developers
+            </div>
+          </div>
+          <div class="px-4 text-black">
+            Developers at Ruby on Rails Development Company are handpicked from
+            the best around the globe. We maintain a positive liaison between
+            you and a developer who would meet your needs. We make sure you
+            reach your desired product and ensure a pleasant cooperation at any
+            stage.
+          </div>
+          <button class="btn btn-octagonal btn-danger mt-4 mw-250px">
+            Hire a developer now
+          </button>
+        </div>
+
+        <div class="row justify-content-center py-5">
+          <div class="code-men-box">
+            <div class="code-men-text text-dark mt-2 mt-sm-4">
+              We provide you with the best developers
+            </div>
+          </div>
+          <div class="px-4 text-black">
+            You would rather work with a team? We will assemble your desired
+            team of developers and designers to help you all the way to
+            launching your product.
+          </div>
+          <button class="btn btn-octagonal btn-danger mt-4 mw-250px">
+            Assemble a team now
+          </button>
+        </div>
+
+        <div class="row justify-content-center py-5">
+          <div
+            class="code-software-box d-flex flex-column justify-content-center align-items-center"
+          >
+            <div class="code-software-text">
+              We provide you with your desired application or software
+            </div>
+
+            <img class="img-fluid my-4" src="./images/laptop.png" alt="" />
+          </div>
+          <div class="px-4 my-4 text-black">
+            Don't feel like talking with several professionals? Leave it to us!
+            Tell us what product you need and we will deliver it to you at the
+            best quality.
+          </div>
+          <button class="btn btn-octagonal btn-danger mt-4 mw-250px">
+            Order a product now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------------- -->
+
+    <!-- NOTE: show this Section only for Desktop -->
+    <section
+      class="bg-white main-section-desktop mt-n5 pb-5 pt-120px d-none d-md-block"
+    >
+      <div class="container">
+        <!-- ------------- -->
+        <div class="row justify-content-center my-4">
+          <div class="col-12 provide-man-md-box">
+            <div class="row h-100">
+              <div class="col-2 img-bx">
+                <img
+                  class="position-absolute"
+                  src="./images/code-man.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-8 fs-5 text-center d-flex justify-content-center align-items-center"
+              >
+                We provide you with the best developers
+              </div>
+              <div class="col-2 code-lines">
+                <img src="./images/code-lines.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-7 d-inline-flex flex-column">
+                <p class="text-black mt-4">
+                  Developers at Ruby on Rails Development Company are handpicked
+                  from the best around the globe. We maintain a positive liaison
+                  between you and a developer who would meet your needs. We make
+                  sure you reach your desired product and ensure a pleasant
+                  cooperation at any stage.
+                </p>
+                <button
+                  class="btn btn-octagonal btn-danger align-self-end mt-3"
+                >
+                  Hire a developer now
+                </button>
+              </div>
+              <div class="col-2 text-end px-0">
+                <img
+                  class="img-fluid"
+                  src="./images/double-stars-2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-7 text-center">
+                <img src="./images/star-2.png" alt="" />
+              </div>
+              <div class="col-2 mt-5 text-center">
+                <img width="24px" src="./images/star-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------- -->
+        <div class="row my-5">
+          <div class="col-12 code-men-md-box">
+            <div class="code-men-header">
+              <p class="text-center fw-600 px-4 m-0 flex-grow-1 py-3">
+                We provide you with a team of professionals
+              </p>
+              <ul class="d-flex m-0 py-3">
+                <li></li>
+                <li></li>
+                <li class="active"></li>
+              </ul>
+            </div>
+            <div class="code-men-main bg-primary text-white">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 p-5">
+                    You would rather work with a team? We will assemble your
+                    desired team of developers and designers to help you all the
+                    way to launching your product.
+                  </div>
+                  <div class="code-man-img-bx col-6">
+                    <img src="./images/code-men-without-border.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-5">
+            <div class="row">
+              <div class="col-7 text-center">
+                <button class="btn btn-octagonal btn-danger">
+                  Assemble a team now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-4">
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-3 text-start">
+                <img
+                  width="24px"
+                  class="img-fluid"
+                  src="./images/star-2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-4">
+            <div class="row">
+              <div class="col-9"></div>
+              <div class="col-2 text-end">
+                <img
+                  width="24px"
+                  class="img-fluid"
+                  src="./images/double-stars-3.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------- -->
+        <div class="row my-5">
+          <div class="col-12 code-software-md-box">
+            <div class="row">
+              <div class="col-3 code-software-md-img-bx">
+                <img src="./images/laptop.png" alt="" />
+              </div>
+              <div class="col-9 code-software-md-text">
+                We provide you with your desired application or software
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 my-5">
+            <div class="row">
+              <div class="col-4 col-xl-5"></div>
+              <div class="col-4">
+                Don't feel like talking with several professionals? Leave it to
+                us! Tell us what product you need and we will deliver it to you
+                at the best quality.
+              </div>
+              <div
+                class="col-4 col-xl-3 d-flex justify-content-center align-items-center"
+              >
+                <button class="btn btn-octagonal btn-danger">
+                  Order a product now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="row">
+              <div class="col-8 col-xl-9"></div>
+              <div class="col-4 col-xl-3">
+                <img width="24px" src="./images/star-1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- -------------------------- Road Path Section -------------------------- -->
+    <section
+      class="road-path-section container d-flex justify-content-center px-4 mt-n40px"
+    >
+      <div class="path-line">
+        <div class="circle-shape">
+          <img src="./images/circle-shape.png" alt="" />
+        </div>
+      </div>
+      <div class="road-path-container">
+        <div class="road-path-btn-bx">
+          <button class="road-path-btn btn btn-octagonal btn-danger p-4">
+            Reach your desired products in 3 easy steps
+          </button>
+        </div>
+        <!-- ---------- -->
+        <div
+          class="road-path-box d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="road-path-item">
+            <div
+              class="road-path-item-child path-left-to-right position-relative"
+            >
+              <div class="steps fw-600">step 1</div>
+              <div class="content-bx">
+                <div class="content">
+                  <div class="title mb-2 px-3">
+                    You contact us with your great ideas
+                  </div>
+                  <div class="description mb-2 px-3">
+                    Which one of our
+                    <span class="text-decoration-underline">services</span>
+                    appeals to you?
+                  </div>
+
+                  <div class="img-bx">
+                    <img class="img-fluid" src="./images/cheque.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-bx d-none d-md-block">
+              <div class="hint">
+                Hint: Check out our cool services, by the way!
+              </div>
+              <ul class="mt-4">
+                <li>Front-end development</li>
+                <li>Back-end development</li>
+                <li>Mobile development</li>
+                <li>Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ---------- -->
+
+        <!-- ---------- -->
+        <div class="road-path-box">
+          <div class="road-path-item left-bx">
+            <div
+              class="road-path-item-child path-right-to-left position-relative"
+            >
+              <div class="steps fw-600">step 2</div>
+              <div class="content-bx">
+                <div class="content">
+                  <div class="title mb-2 px-3">
+                    We prepare the necessary tools
+                  </div>
+                  <div class="description mb-2 px-3">
+                    Our teams and developers assemble.
+                  </div>
+                </div>
+              </div>
+              <div class="content-img-bx">
+                <img
+                  class="shovel-img img-fluid"
+                  src="./images/shovel.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="info-bx d-none d-md-block">
+              <div class="hint">
+                Hint: We are really good at it! Carefully selecting our
+                developers based on your preferences is really what we excel at!
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------- -->
+
+        <!-- ---------- -->
+        <div class="road-path-box">
+          <div class="road-path-item">
+            <div
+              class="road-path-item-child path-left-to-right position-relative"
+            >
+              <div class="steps fw-600">step 3</div>
+              <div class="content-bx">
+                <div class="content">
+                  <div class="title mb-2 px-3">
+                    You receive your desired product
+                  </div>
+                  <div class="description mb-2 px-3">
+                    We make sure all your expectations are met
+                  </div>
+                </div>
+              </div>
+              <div class="content-img-bx">
+                <img class="tab-img img-fluid" src="./images/tab.png" alt="" />
+              </div>
+            </div>
+
+            <div class="info-bx d-none d-md-block">
+              <div class="hint">Hint: We guarantee this.</div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------- -->
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- --------------------------- Discuss Section --------------------------- -->
+    <section
+      class="container my-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="discuss-section mb-3 flex-row justify-content-center text-center align-items-center"
+      >
+        <h2
+          class="discuss-text-box d-inline-flex align-items-center justify-content-center flex-column flex-md-row"
+        >
+          <span>Want to discuss&nbsp;</span>
+          <span>your great ideas?</span>
+        </h2>
+      </div>
+      <button
+        class="btn btn-octagonal btn-danger"
+        data-bs-toggle="modal"
+        data-bs-target="#getInTouchModal"
+      >
+        Get in touch!
+      </button>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- Footer -------------------------------- -->
+    <footer class="container-fluid mx-0">
+      <div class="row">
+        <div class="col-12 col-md-9 footer-details">
+          <div class="row mt-5">
+            <div class="col-6 mt-20px ps-5">
+              <h3 class="text-white mb-5">Logo</h3>
+              <ul class="footer-list">
+                <li><a href="#">Address</a></li>
+                <li><a href="#">Tel.</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="footer-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Hire a programmer</a></li>
+                <li><a href="#">Join us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="my-5 text-center d-flex align-items-center justify-content-center d-md-none"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+            </div>
+            <div class="mx-3">
+              <a href="#">
+                <img class="img-fluid" src="./images/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+
+          <small
+            class="text-center text-white d-block my-5 pt-5 pt-md-0 mt-md-4 mb-md-5 text-md-start ps-md-4"
+          >
+            Ruby on Rails 2021 All rights reserved.
+          </small>
+        </div>
+        <div class="d-none d-md-flex col-md-3 p-0 justify-content-center">
+          <div
+            class="text-center d-flex align-items-center justify-content-center mt-5"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+              /></a>
+            </div>
+            <div class="mx-3">
+              <a href="#"
+                ><img class="img-fluid" src="./images/github.png" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------- Get in Touch Modal -------------------------- -->
+    <div
+      class="modal fade"
+      id="getInTouchModal"
+      tabindex="-1"
+      aria-labelledby="getInTouchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header px-5">
+            <h5 class="modal-title" id="getInTouchModalLabel">Get in touch!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="px-4">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label text-white"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label text-white"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label text-white"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="6"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-octagonal btn-danger mb-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="./scripts/vendors/bootstrap5.min.js"></script>
+    <!-- ----------------------------------------------------------------------- -->
+  </body>
+</html>

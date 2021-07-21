@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruby on Rails</title>
+    <link href="styles/vendors/bootstrap5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/shared.css" type="text/css" />
+    <link rel="stylesheet" href="styles/css/services.css" type="text/css" />
+  </head>
+  <body>
+    <!-- ------------------------------- Navbar -------------------------------- -->
+    <nav class="navbar">
+      <div class="container px-4">
+        <a class="navbar-brand logo" href="./index.html">
+          <img src="./images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+
+        <div
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobile-menu"
+          aria-controls="mobile-menu"
+          id="hamberger-menu"
+          class="d-md-none"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </div>
+
+        <div class="d-none d-md-flex flex-md-row navbar-nav">
+          <a class="me-4 nav-link active" href="./services.html">Services</a>
+          <a class="me-4 nav-link" href="./blog.html">Blog</a>
+          <a class="me-4 nav-link" href="./contact.html">Contact us</a>
+          <a class="me-4 nav-link" href="./about-us.html">About us</a>
+          <button
+            class="btn btn-octagonal btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#getInTouchModal"
+          >
+            Get in touch!
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NOTE: Mobile Menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobile-menu"
+      aria-labelledby="monile-menu-header"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+    >
+      <div class="offcanvas-header">
+        <a
+          href="./index.html"
+          class="offcanvas-title text-decoration-none"
+          id="monile-menu-header"
+        >
+          <img
+            width="132px"
+            class="img-fluid"
+            src="./images/logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- Intro Section ---------------------------- -->
+    <section class="container px-4 mt-5 d-md-flex flex-md-column">
+      <!-- Intro -->
+      <div class="row align-items-md-center">
+        <div class="col-12 col-md-6">
+          <h1 class="text-danger">Services</h1>
+          <p class="my-4 my-md-5 intro-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            animi laboriosam quasi tenetur doloribus ipsum quidem culpa officia
+            ad illum sint error esse quia id, modi voluptatibus asperiores
+            deleniti. Facilis.
+          </p>
+        </div>
+        <div class="col-12 col-md-6 mb-5 mb-md-0">
+          <img class="img-fluid" src="./images/services.png" alt="services" />
+        </div>
+      </div>
+      <!-- ----- -->
+      <!-- Buttons -->
+      <div class="row mb-5 my-md-5">
+        <!-- Button -->
+        <div
+          class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
+        >
+          <div class="my-3 btn btn-secondary service-btn">
+            <span class="btn-img-bx">
+              <img src="./images/coding.png" alt="" />
+            </span>
+            <span class="flex-grow-1 text-dark">Frontend development</span>
+          </div>
+        </div>
+        <!-- ------ -->
+        <!-- Button -->
+        <div
+          class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
+        >
+          <div class="my-3 btn btn-secondary service-btn">
+            <span class="btn-img-bx">
+              <img src="./images/settings.png" alt="" />
+            </span>
+            <span class="flex-grow-1 text-dark">Backend development</span>
+          </div>
+        </div>
+        <!-- ------ -->
+        <!-- Button -->
+        <div
+          class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
+        >
+          <div class="my-3 btn btn-secondary service-btn">
+            <span class="btn-img-bx">
+              <img src="./images/smartphone.png" alt="" />
+            </span>
+            <span class="flex-grow-1 text-dark">Mobile development</span>
+          </div>
+        </div>
+        <!-- ------ -->
+        <!-- Button -->
+        <div
+          class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-center"
+        >
+          <div class="my-3 btn btn-secondary service-btn">
+            <span class="btn-img-bx">
+              <img src="./images/paint-board.png" alt="" />
+            </span>
+            <span class="flex-grow-1 text-dark">Design</span>
+          </div>
+        </div>
+        <!-- ------ -->
+      </div>
+      <!-- ------- -->
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- --------------------------- Feature Section --------------------------- -->
+    <section class="bg-white py-5">
+      <div class="container">
+        <!-- Feature Item -->
+        <div class="row feature-box feature-right">
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" src="./images/ruby-setting.png" alt="" />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="content">
+              <div class="title text-dark">Backend development</div>
+              <div class="description text-dark">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ -->
+        <!-- Feature Item -->
+        <div class="row feature-box">
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" src="./images/ruby-message.png" alt="" />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="content">
+              <div class="title text-dark">Frontend development</div>
+              <div class="description text-dark">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ -->
+        <!-- Feature Item -->
+        <div class="row feature-box feature-right">
+          <div class="col-12 col-md-6">
+            <img class="img-fluid" src="./images/ruby-mobile.png" alt="" />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="content">
+              <div class="title text-dark">Mobile development</div>
+              <div class="description text-dark">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                sed diam voluptua. At vero eos et accusam et justo duo dolores
+                et ea rebum. Stet clita kasd gubergren, no
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ -->
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- --------------------------- Discuss Section --------------------------- -->
+    <section
+      class="container my-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="discuss-section mb-3 flex-row justify-content-center text-center align-items-center"
+      >
+        <h2
+          class="discuss-text-box d-inline-flex align-items-center justify-content-center flex-column flex-md-row"
+        >
+          <span>Want to discuss&nbsp;</span>
+          <span>your great ideas?</span>
+        </h2>
+      </div>
+      <button
+        class="btn btn-octagonal btn-danger"
+        data-bs-toggle="modal"
+        data-bs-target="#getInTouchModal"
+      >
+        Get in touch!
+      </button>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- Footer -------------------------------- -->
+
+    <footer class="container-fluid mx-0">
+      <div class="row">
+        <div class="col-12 col-md-9 footer-details">
+          <div class="row mt-5">
+            <div class="col-6 mt-20px ps-5">
+              <h3 class="text-white mb-5">Logo</h3>
+              <ul class="footer-list">
+                <li><a href="#">Address</a></li>
+                <li><a href="#">Tel.</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="footer-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Hire a programmer</a></li>
+                <li><a href="#">Join us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="my-5 text-center d-flex align-items-center justify-content-center d-md-none"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+            </div>
+            <div class="mx-3">
+              <a href="#">
+                <img class="img-fluid" src="./images/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+
+          <small
+            class="text-center text-white d-block my-5 pt-5 pt-md-0 mt-md-4 mb-md-5 text-md-start ps-md-4"
+          >
+            Ruby on Rails 2021 All rights reserved.
+          </small>
+        </div>
+        <div class="d-none d-md-flex col-md-3 p-0 justify-content-center">
+          <div
+            class="text-center d-flex align-items-center justify-content-center mt-5"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+              /></a>
+            </div>
+            <div class="mx-3">
+              <a href="#"
+                ><img class="img-fluid" src="./images/github.png" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------- Get in Touch Modal -------------------------- -->
+    <div
+      class="modal fade"
+      id="getInTouchModal"
+      tabindex="-1"
+      aria-labelledby="getInTouchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header px-5">
+            <h5 class="modal-title" id="getInTouchModalLabel">Get in touch!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="px-4">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label text-white"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label text-white"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label text-white"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="6"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-octagonal btn-danger mb-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="./scripts/vendors/bootstrap5.min.js"></script>
+    <!-- ----------------------------------------------------------------------- -->
+  </body>
+</html>

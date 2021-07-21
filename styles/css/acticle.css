@@ -1,0 +1,304 @@
+/* ----------------------------- Article Section ---------------------------- */
+.article-section {
+  border-radius: 38px;
+}
+
+.article-section .img-bx {
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .img-bx {
+    max-height: 400px;
+  }
+}
+
+.article-section .img-bx img {
+  object-position: center;
+  border-radius: 38px;
+}
+
+.article-section .article-title-bx h3 {
+  font-size: 1.25rem;
+  color: #000000;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .article-title-bx h3 {
+    color: #000000;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  .article-section .article-title-bx h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+}
+
+.article-section .article-title-bx ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.article-section .article-title-bx ul li {
+  margin: 0 5px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 2.11;
+  color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .article-title-bx ul li {
+    font-size: 15px;
+  }
+}
+
+.article-section .paragraph-section h4 {
+  font-size: calc(1.1rem + 0.3vw);
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .paragraph-section h4 {
+    font-size: calc(1.275rem + 0.3vw);
+  }
+}
+
+.article-section .paragraph-section p {
+  font-size: calc(1rem + 0.3vw);
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .paragraph-section p {
+    font-size: calc(1.15rem + 0.3vw);
+  }
+}
+
+.article-section .author-img-bx {
+  max-width: 103px;
+}
+
+.article-section .author-name {
+  font-size: 19px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .author-name {
+    font-size: 28px;
+  }
+}
+
+.article-section .author-des {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-section .author-des {
+    font-size: 19px;
+  }
+}
+
+.another-article-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) {
+  .another-article-text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- similar Articles ---------------------------- */
+.similar-articles-box {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.similar-articles-box .suggest-article-card {
+  background-color: #fff;
+  border-radius: 38px;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.similar-articles-box .suggest-article-card .img-bx {
+  overflow: hidden;
+}
+
+.similar-articles-box .suggest-article-card .img-bx img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 38px;
+  object-fit: contain;
+}
+
+.similar-articles-box .suggest-article-card .content {
+  padding: 15px 30px;
+}
+
+.similar-articles-box .suggest-article-card .content .title {
+  margin: 24px 0;
+  font-weight: 500;
+  color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+  .similar-articles-box .suggest-article-card .content .title {
+    font-size: 18px;
+  }
+}
+
+.similar-articles-box .suggest-article-card .content .details {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.similar-articles-box .suggest-article-card .content .details li {
+  font-size: 13px;
+  color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+  .similar-articles-box .suggest-article-card .content .details li {
+    font-size: 14px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* ----------------------------- comment section ---------------------------- */
+.comments-box {
+  background-color: #fff;
+  border-radius: 38px;
+  overflow: hidden;
+}
+
+.comments-box .comment {
+  margin-bottom: 34px;
+  padding-left: 29px;
+}
+
+.comments-box .comment .avatar {
+  max-width: 38px;
+  max-height: 38px;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments-box .comment .avatar {
+    max-width: 55px;
+    max-height: 55px;
+  }
+}
+
+.comments-box .title {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.37;
+  color: #0f141a;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments-box .title {
+    font-size: 23px;
+  }
+}
+
+.comments-box .time {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.37;
+  color: #0f141a;
+}
+
+@media only screen and (min-width: 576px) {
+  .comments-box .time {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .comments-box .time {
+    font-size: 17px;
+  }
+}
+
+.comments-box .text {
+  color: #0f141a;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments-box .text {
+    font-size: 19px;
+    margin-left: calc(1rem + 55px);
+  }
+}
+
+.comments-box .replay-comment {
+  position: relative;
+  padding-left: 44px;
+  margin-left: 38px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .comments-box .replay-comment {
+    margin-left: calc(1rem + 84px);
+  }
+  .comments-box .replay-comment .content {
+    padding-right: calc(1rem + 84px);
+  }
+}
+
+.comments-box .replay-comment:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 0;
+  background-color: #ff7779;
+}
+
+.comments-box .replay-comment .text {
+  margin-left: 0;
+}
+
+.more-comments {
+  color: #0f141a;
+  text-align: center;
+  margin-top: 36px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .more-comments {
+    margin-top: 101px;
+    font-size: 19px;
+    margin-bottom: 0px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */

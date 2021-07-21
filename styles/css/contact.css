@@ -1,0 +1,33 @@
+.contact-us-details {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-us-details li {
+  margin-bottom: 20px;
+}
+
+.contact-us-details li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 576px) {
+  .contact-us-details li a {
+    font-size: 1rem;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 159px;
+  border-radius: 27px;
+}
+
+@media only screen and (min-width: 768px) {
+  .map {
+    max-width: 628px;
+    height: 342px;
+  }
+}

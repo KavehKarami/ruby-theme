@@ -2,5 +2,51 @@ $bg-body: #fff8f8;
 $line-colors: #fc6e71;
 $nav-link-color: #0c203b;
 $danger-color: #ff7779;
+$secondary-color: #ffe9e9;
+$secondary-border-color: #ffafb1;
+$btn-danger-color-disabled: rgba(255, 119, 121, 0.43);
+$text-color-disabled: rgba(15, 20, 26, 0.67);
 $btn-danger-font-color: #ffeeee;
+$btn-outlined-danger-font-color: #0f141a;
 $discuss-text-color: #0f141a;
+$box-shadow: #152c4f;
+$paginationClipPath: polygon(
+  20% 0,
+  80% 0,
+  100% 20%,
+  100% 80%,
+  80% 100%,
+  20% 100%,
+  0 80%,
+  0 20%
+);
+$search-input-border-color: rgba(255, 170, 171, 0.32);
+$search-input-color: rgba(27, 58, 98, 0.54);
+$dark-color: #0f141a;
+$line-border-color: #ffc7c7;
+$blue-dark-color: #0c203b;
+$blue-color: #1a3b60;
+$red-color: #f55558;
+$road-path-color: #ff9a9b;
+$roadPathClipPath: polygon(
+  8% 0,
+  92% 0,
+  100% 8%,
+  100% 92%,
+  92% 100%,
+  8% 100%,
+  0 92%,
+  0 8%
+);
+
+$modalClipPath: polygon(
+  3% 0,
+  97% 0,
+  100% 3%,
+  100% 97%,
+  97% 100%,
+  3% 100%,
+  0 97%,
+  0 3%
+);
+$modal-form-color: #ff9a9b;

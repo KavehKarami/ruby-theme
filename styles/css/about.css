@@ -1,4 +1,4 @@
-.about-text {
+.intro-text {
   font-size: 14px;
   font-weight: normal;
   line-height: 19px;
@@ -6,10 +6,16 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-text {
+  .intro-text {
     font-size: 20px;
     font-weight: normal;
     line-height: 32px;
     color: #000;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-intro {
+    margin-bottom: 150px;
   }
 }

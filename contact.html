@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruby on Rails</title>
+    <link href="styles/vendors/bootstrap5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/shared.css" type="text/css" />
+    <link rel="stylesheet" href="styles/css/contact.css" type="text/css" />
+  </head>
+  <body>
+    <!-- ------------------------------- Navbar -------------------------------- -->
+    <nav class="navbar">
+      <div class="container px-4">
+        <a class="navbar-brand logo" href="./index.html">
+          <img src="./images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+
+        <div
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobile-menu"
+          aria-controls="mobile-menu"
+          id="hamberger-menu"
+          class="d-md-none"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </div>
+
+        <div class="d-none d-md-flex flex-md-row navbar-nav">
+          <a class="me-4 nav-link" href="./services.html">Services</a>
+          <a class="me-4 nav-link" href="./blog.html">Blog</a>
+          <a class="me-4 nav-link active" href="./contact.html">Contact us</a>
+          <a class="me-4 nav-link" href="./about-us.html">About us</a>
+          <button
+            class="btn btn-octagonal btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#getInTouchModal"
+          >
+            Get in touch!
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NOTE: Mobile Menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobile-menu"
+      aria-labelledby="monile-menu-header"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+    >
+      <div class="offcanvas-header">
+        <a
+          href="./index.html"
+          class="offcanvas-title text-decoration-none"
+          id="monile-menu-header"
+        >
+          <img
+            width="132px"
+            class="img-fluid"
+            src="./images/logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <section class="container px-4 mt-5 d-md-flex">
+      <div class="row align-items-md-center">
+        <div class="col-12 col-md-6">
+          <h1 class="text-danger">Contact Us</h1>
+          <p class="my-4 my-md-5">You can contact us by phone or email.</p>
+          <ul class="contact-us-details">
+            <li>
+              <i
+                ><img class="img-fluid" src="./images/email.png" alt="email"
+              /></i>
+              <a class="ms-3" href="mailto:something@something.com">
+                Email: something@something.com
+              </a>
+            </li>
+            <li>
+              <i
+                ><img class="img-fluid" src="./images/phone.png" alt="phone"
+              /></i>
+              <a class="ms-3" href="callto:+98999999999">
+                Tel.: +98 999999999
+              </a>
+            </li>
+            <li>
+              <i
+                ><img
+                  class="img-fluid"
+                  src="./images/location.png"
+                  alt="Address"
+              /></i>
+              <a class="ms-3" href="#"> Address: </a>
+            </li>
+          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798902705!2d-74.25986790365917!3d40.697670067823786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1596152431947!5m2!1sen!2sbd"
+            class="map my-5 mb-md-0"
+          ></iframe>
+        </div>
+        <div class="col-12 col-md-6 mb-5 mb-md-0">
+          <img
+            class="img-fluid"
+            src="./images/diamond-chat.png"
+            alt="contact-us"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------- Discuss Section --------------------------- -->
+    <section
+      class="container my-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="discuss-section mb-3 flex-row justify-content-center text-center align-items-center"
+      >
+        <h2
+          class="discuss-text-box d-inline-flex align-items-center justify-content-center flex-column flex-md-row"
+        >
+          <span>Want to discuss&nbsp;</span>
+          <span>your great ideas?</span>
+        </h2>
+      </div>
+      <button
+        class="btn btn-octagonal btn-danger"
+        data-bs-toggle="modal"
+        data-bs-target="#getInTouchModal"
+      >
+        Get in touch!
+      </button>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- Footer -------------------------------- -->
+
+    <footer class="container-fluid mx-0">
+      <div class="row">
+        <div class="col-12 col-md-9 footer-details">
+          <div class="row mt-5">
+            <div class="col-6 mt-20px ps-5">
+              <h3 class="text-white mb-5">Logo</h3>
+              <ul class="footer-list">
+                <li><a href="#">Address</a></li>
+                <li><a href="#">Tel.</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="footer-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Hire a programmer</a></li>
+                <li><a href="#">Join us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="my-5 text-center d-flex align-items-center justify-content-center d-md-none"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+            </div>
+            <div class="mx-3">
+              <a href="#">
+                <img class="img-fluid" src="./images/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+
+          <small
+            class="text-center text-white d-block my-5 pt-5 pt-md-0 mt-md-4 mb-md-5 text-md-start ps-md-4"
+          >
+            Ruby on Rails 2021 All rights reserved.
+          </small>
+        </div>
+        <div class="d-none d-md-flex col-md-3 p-0 justify-content-center">
+          <div
+            class="text-center d-flex align-items-center justify-content-center mt-5"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+              /></a>
+            </div>
+            <div class="mx-3">
+              <a href="#"
+                ><img class="img-fluid" src="./images/github.png" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!-- ------------------------- Get in Touch Modal -------------------------- -->
+    <div
+      class="modal fade"
+      id="getInTouchModal"
+      tabindex="-1"
+      aria-labelledby="getInTouchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header px-5">
+            <h5 class="modal-title" id="getInTouchModalLabel">Get in touch!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="px-4">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label text-white"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label text-white"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label text-white"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="6"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-octagonal btn-danger mb-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="./scripts/vendors/bootstrap5.min.js"></script>
+    <!-- ----------------------------------------------------------------------- -->
+  </body>
+</html>

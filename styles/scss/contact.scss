@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./mixins";
+
+.contact-us-details {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 20px;
+
+    a {
+      color: #000;
+      text-decoration: none;
+      font-size: 13px;
+
+      @include bp-sm {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.map {
+  width: 100%;
+  height: 159px;
+  border-radius: 27px;
+
+  @include bp-md {
+    max-width: 628px;
+    height: 342px;
+  }
+}

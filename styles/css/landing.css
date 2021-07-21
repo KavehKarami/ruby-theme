@@ -1,0 +1,655 @@
+/* ------------------------------ intro Section ----------------------------- */
+.landing-intro {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-intro {
+    background-image: url("../../images/white-diamond.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
+}
+
+.landing-intro .intro-content h1 {
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-intro .intro-content h1 {
+    font-size: 1.5rem;
+  }
+  .landing-intro .intro-content .describe {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .landing-intro .intro-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-intro .info-paragraph {
+    font-size: 20px;
+  }
+}
+
+.landing-intro .intro-btn-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-intro .intro-btn-box {
+    margin-top: 7rem;
+  }
+}
+
+.landing-intro .intro-btn-box .intro-btn {
+  position: absolute;
+  width: 250px;
+}
+
+@media only screen and (min-width: 576px) {
+  .landing-intro .intro-btn-box .intro-btn {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-intro .intro-btn-box .intro-btn {
+    width: 350px;
+  }
+}
+
+.landing-intro .intro-btn-box .intro-btn-icons {
+  height: 57.5px;
+  width: 250px;
+  position: relative;
+}
+
+@media only screen and (min-width: 576px) {
+  .landing-intro .intro-btn-box .intro-btn-icons {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-intro .intro-btn-box .intro-btn-icons {
+    width: 350px;
+    height: 45.5px;
+  }
+}
+
+.landing-intro .intro-btn-box .intro-btn-icons.icon-bx-1:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("./../../images/double-stars-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -20px;
+  right: -30px;
+}
+
+.landing-intro .intro-btn-box .intro-btn-icons.icon-bx-2:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("./../../images/double-stars-1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -20px;
+  left: -30px;
+}
+
+.landing-intro .intro-btn-box .intro-btn-icons.icon-bx-2:after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-image: url("./../../images/star-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -20px;
+  right: -30px;
+}
+
+.line-border {
+  position: relative;
+  z-index: 99;
+}
+
+.line-border:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 4px);
+  left: -2px;
+  height: 6px;
+  background-color: #ffc7c7;
+  z-index: -1;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ------------------------------ Main Section ------------------------------ */
+.provide-man-box {
+  position: relative;
+  height: 400px;
+  max-width: 316px;
+  background-image: url("./../../images/provide-man-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.code-men-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 290px;
+  max-width: 316px;
+  background-image: url("./../../images/code-men.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 576px) {
+  .code-men-box {
+    height: 400px;
+    max-width: 450px;
+  }
+}
+
+.code-men-box .code-men-text {
+  max-width: 150px;
+  font-size: 13px;
+  position: absolute;
+  text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .code-men-box .code-men-text {
+    max-width: 250px;
+    font-weight: 500;
+  }
+}
+
+.code-software-box .code-software-text {
+  border-radius: 36px;
+  border: solid 5px #1a3b60;
+  position: relative;
+  text-align: center;
+  padding: 12px 32px;
+  padding-right: 79px;
+  position: relative;
+  color: #1a3b60;
+  font-weight: 600;
+}
+
+.code-software-box .code-software-text:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #1a3b60;
+  width: 49px;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+}
+
+.main-section-desktop {
+  min-height: 500px;
+}
+
+.provide-man-md-box {
+  background-color: #1a3b60;
+  color: #fff;
+  height: 120px;
+  border-radius: 9px;
+}
+
+.provide-man-md-box .img-bx {
+  position: relative;
+}
+
+.provide-man-md-box .img-bx img {
+  width: 200px;
+  left: -30px;
+  top: 10px;
+}
+
+.provide-man-md-box .code-lines {
+  position: relative;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.provide-man-md-box .code-lines img {
+  object-fit: contain;
+  max-width: 120px;
+  margin-right: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .provide-man-md-box .code-lines img {
+    margin-right: 0;
+  }
+}
+
+.code-men-md-box .code-men-header {
+  display: flex;
+  align-items: center;
+  border: 3px solid #f55558;
+}
+
+.code-men-md-box .code-men-header p {
+  color: #f55558;
+}
+
+.code-men-md-box .code-men-header ul {
+  background-color: #f55558;
+  list-style-type: none;
+  padding: 0;
+}
+
+.code-men-md-box .code-men-header ul li {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.code-men-md-box .code-men-header ul li.active {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.code-men-md-box .code-men-header ul li.active:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f55558;
+  border-radius: 100%;
+}
+
+.code-men-md-box .code-men-main {
+  position: relative;
+}
+
+.code-men-md-box .code-men-main .code-man-img-bx img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .code-men-md-box .code-men-main .code-man-img-bx img {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .code-men-md-box .code-men-main .code-man-img-bx img {
+    max-width: 100%;
+  }
+}
+
+.code-software-md-box {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .code-software-md-box {
+    margin-left: -50px;
+  }
+}
+
+.code-software-md-box .code-software-md-img-bx {
+  position: relative;
+  z-index: 999999;
+}
+
+.code-software-md-box .code-software-md-img-bx img {
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .code-software-md-box .code-software-md-img-bx img {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .code-software-md-box .code-software-md-img-bx img {
+    left: 45%;
+  }
+}
+
+.code-software-md-box .code-software-md-text {
+  box-shadow: 0 0 0 3px #1a3b60;
+  border-radius: 35px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #1a3b60;
+}
+
+@media only screen and (min-width: 992px) {
+  .code-software-md-box .code-software-md-text {
+    font-size: 18px;
+  }
+}
+
+.code-software-md-box .code-software-md-text:before {
+  content: "90%";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: rgba(255, 255, 255, 0.38);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1a3b60;
+  height: 100%;
+  width: 50px;
+  border-radius: 0 26px 26px 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .code-software-md-box .code-software-md-text:before {
+    width: 90px;
+    font-size: 24px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- Road Path Section --------------------------- */
+.road-path-section {
+  position: relative;
+  min-height: 1450px;
+  margin-bottom: 100px;
+}
+
+.road-path-section .path-line {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 1450px;
+  background-color: #ff9a9b;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.road-path-section .path-line .circle-shape {
+  position: absolute;
+  bottom: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.road-path-section .road-path-btn-bx {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .road-path-section .road-path-btn-bx:before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("./../../images/double-stars-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -10px;
+    right: -60px;
+  }
+  .road-path-section .road-path-btn-bx:after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("./../../images/double-stars-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -10px;
+    left: -60px;
+  }
+}
+
+.road-path-section .road-path-btn-bx .road-path-btn {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  .road-path-section .road-path-btn-bx .road-path-btn {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .road-path-section .road-path-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.road-path-section .road-path-box {
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .road-path-section .road-path-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.road-path-section .road-path-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible !important;
+  z-index: 999;
+}
+
+@media only screen and (min-width: 768px) {
+  .road-path-section .road-path-item {
+    width: 100%;
+  }
+}
+
+.road-path-section .road-path-item.left-bx {
+  flex-direction: row-reverse;
+}
+
+.road-path-section .road-path-item.left-bx .info-bx {
+  margin: 0;
+  margin-right: 89px;
+}
+
+@media only screen and (min-width: 768px) {
+  .road-path-section .road-path-item .road-path-item-child.path-left-to-right {
+    margin-right: 20px;
+  }
+  .road-path-section .road-path-item .road-path-item-child.path-left-to-right:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 70px;
+    height: 7px;
+    background-color: #ff9a9b;
+    right: -65px;
+  }
+  .road-path-section .road-path-item .road-path-item-child.path-right-to-left {
+    margin: 0;
+    margin-left: 20px;
+  }
+  .road-path-section .road-path-item .road-path-item-child.path-right-to-left:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    width: 70px;
+    height: 7px;
+    background-color: #ff9a9b;
+    left: -65px;
+  }
+}
+
+.road-path-section .road-path-item .steps {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ff9a9b;
+  color: #fff;
+  left: 35px;
+  top: -35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+  overflow: visible;
+}
+
+.road-path-section .road-path-item .content-bx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff9a9b;
+  width: 300px;
+  height: 300px;
+  clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%);
+  -webkit-clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%);
+}
+
+.road-path-section .road-path-item .content-bx .content {
+  position: relative;
+  width: 286px;
+  height: 286px;
+  clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%);
+  -webkit-clip-path: polygon(8% 0, 92% 0, 100% 8%, 100% 92%, 92% 100%, 8% 100%, 0 92%, 0 8%);
+  background: #fff8f8;
+  padding-right: 7px;
+  padding-top: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #0c203b;
+}
+
+.road-path-section .road-path-item .content-bx .content .description {
+  font-size: 11px;
+}
+
+.road-path-section .road-path-item .info-bx {
+  min-width: 320px;
+  width: 320px;
+  max-width: 320px;
+  margin: 0;
+  margin-left: 89px;
+}
+
+@media only screen and (min-width: 992px) {
+  .road-path-section .road-path-item .info-bx {
+    padding-left: 30px;
+  }
+}
+
+.road-path-section .road-path-item .info-bx .hint {
+  position: relative;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: #0c203b;
+}
+
+.road-path-section .road-path-item .info-bx .hint:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../../images/alert.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0px;
+  left: -24px;
+}
+
+.road-path-section .road-path-item .info-bx ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.road-path-section .road-path-item .info-bx ul li {
+  position: relative;
+  margin: 25px 0;
+  font-weight: 600;
+  color: #0c203b;
+}
+
+.road-path-section .road-path-item .info-bx ul li:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("./../../images/circle-shape.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0px;
+  left: -24px;
+}
+
+.road-path-section .content-img-bx {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: -30px;
+}
+
+.road-path-section .content-img-bx .shovel-img {
+  width: 266px;
+}
+
+.road-path-section .content-img-bx .tab-img {
+  width: 240px;
+}
+
+/* -------------------------------------------------------------------------- */

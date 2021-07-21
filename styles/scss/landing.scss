@@ -1,0 +1,608 @@
+@import "./variables";
+@import "./mixins";
+
+/* ------------------------------ intro Section ----------------------------- */
+.landing-intro {
+  position: relative;
+
+  @include bp-md {
+    background-image: url("../../images/white-diamond.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
+
+  .intro-content {
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    @include bp-md {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .describe {
+        font-size: 18px;
+      }
+    }
+
+    @include bp-lg {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .info-paragraph {
+    @include bp-md {
+      font-size: 20px;
+    }
+  }
+
+  .intro-btn-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    @include bp-md {
+      margin-top: 7rem;
+    }
+
+    .intro-btn {
+      position: absolute;
+      width: 250px;
+
+      @include bp-sm {
+        width: 300px;
+      }
+
+      @include bp-md {
+        width: 350px;
+      }
+    }
+
+    .intro-btn-icons {
+      height: 57.5px;
+      width: 250px;
+      position: relative;
+
+      @include bp-sm {
+        width: 300px;
+      }
+
+      @include bp-md {
+        width: 350px;
+        height: 45.5px;
+      }
+
+      &.icon-bx-1 {
+        &:before {
+          content: "";
+          width: 32px;
+          height: 32px;
+          background-image: url("./../../images/double-stars-2.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: -20px;
+          right: -30px;
+        }
+      }
+
+      &.icon-bx-2 {
+        &:before {
+          content: "";
+          width: 32px;
+          height: 32px;
+          background-image: url("./../../images/double-stars-1.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          bottom: -20px;
+          left: -30px;
+        }
+
+        &:after {
+          content: "";
+          width: 32px;
+          height: 32px;
+          background-image: url("./../../images/star-2.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          bottom: -20px;
+          right: -30px;
+        }
+      }
+    }
+  }
+}
+
+.line-border {
+  position: relative;
+  z-index: 99;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 4px);
+    left: -2px;
+
+    height: 6px;
+    background-color: $line-border-color;
+    z-index: -1;
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ Main Section ------------------------------ */
+.provide-man-box {
+  position: relative;
+  height: 400px;
+  max-width: 316px;
+  background-image: url("./../../images/provide-man-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.code-men-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 290px;
+  max-width: 316px;
+  background-image: url("./../../images/code-men.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include bp-sm {
+    height: 400px;
+    max-width: 450px;
+  }
+
+  .code-men-text {
+    max-width: 150px;
+    font-size: 13px;
+    position: absolute;
+    text-align: center;
+
+    @include bp-sm {
+      max-width: 250px;
+      font-weight: 500;
+    }
+  }
+}
+
+.code-software-box {
+  .code-software-text {
+    border-radius: 36px;
+    border: solid 5px $blue-color;
+    position: relative;
+    text-align: center;
+    padding: 12px 32px;
+    padding-right: 79px;
+    position: relative;
+    color: $blue-color;
+    font-weight: 600;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: $blue-color;
+      width: 49px;
+      height: 100%;
+      border-radius: 0 20px 20px 0;
+    }
+  }
+}
+.main-section-desktop {
+  min-height: 500px;
+}
+.provide-man-md-box {
+  background-color: $blue-color;
+  color: #fff;
+  height: 120px;
+  border-radius: 9px;
+
+  .img-bx {
+    position: relative;
+
+    img {
+      width: 200px;
+      left: -30px;
+      top: 10px;
+    }
+  }
+  .code-lines {
+    position: relative;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img {
+      object-fit: contain;
+      max-width: 120px;
+      margin-right: 30px;
+      @include bp-lg {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.code-men-md-box {
+  .code-men-header {
+    display: flex;
+    align-items: center;
+    border: 3px solid $red-color;
+
+    p {
+      color: $red-color;
+    }
+
+    ul {
+      background-color: $red-color;
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background-color: #fff;
+
+        &.active {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $red-color;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .code-men-main {
+    position: relative;
+    .code-man-img-bx {
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include bp-md {
+          max-width: 400px;
+        }
+        @include bp-lg {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.code-software-md-box {
+  margin-top: 2rem;
+  @include bp-lg {
+    margin-left: -50px;
+  }
+  .code-software-md-img-bx {
+    position: relative;
+    z-index: 999999;
+    img {
+      position: absolute;
+      top: -90px;
+      left: 0;
+      @include bp-md {
+        width: 250px;
+      }
+      @include bp-lg {
+        left: 45%;
+      }
+    }
+  }
+  .code-software-md-text {
+    box-shadow: 0 0 0 3px $blue-color;
+    border-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    @include font(16px, 600, 1.33, $blue-color);
+
+    @include bp-lg {
+      font-size: 18px;
+    }
+
+    &:before {
+      content: "90%";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include font(18px, 600, 1.33, rgba(255, 255, 255, 0.38));
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $blue-color;
+      height: 100%;
+      width: 50px;
+      border-radius: 0 26px 26px 0;
+
+      @include bp-lg {
+        width: 90px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+/* ---------------------------- Road Path Section --------------------------- */
+.road-path-section {
+  position: relative;
+  min-height: 1450px;
+  margin-bottom: 100px;
+
+  .path-line {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 1450px;
+    background-color: $road-path-color;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .circle-shape {
+      position: absolute;
+      bottom: 0;
+      width: 34px;
+      height: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .road-path-btn-bx {
+    position: relative;
+    @include bp-md {
+      &:before {
+        content: "";
+        width: 32px;
+        height: 32px;
+        background-image: url("./../../images/double-stars-1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -10px;
+        right: -60px;
+      }
+
+      &:after {
+        content: "";
+        width: 32px;
+        height: 32px;
+        background-image: url("./../../images/double-stars-2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -10px;
+        left: -60px;
+      }
+    }
+    .road-path-btn {
+      font-weight: 600;
+      @include bp-md {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .road-path-container {
+    @include bp-md {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  .road-path-box {
+    margin-top: 5rem;
+    @include bp-md {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  .road-path-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: visible !important;
+    z-index: 999;
+
+    @include bp-md {
+      width: 100%;
+    }
+
+    &.left-bx {
+      flex-direction: row-reverse;
+
+      .info-bx {
+        margin: 0;
+        margin-right: 89px;
+      }
+    }
+
+    .road-path-item-child {
+      @include bp-md {
+        &.path-left-to-right {
+          margin-right: 20px;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            width: 70px;
+            height: 7px;
+            background-color: $road-path-color;
+            right: -65px;
+
+            // @include bp-lg {
+            //   width: 50px;
+            //   right: -43px;
+            // }
+          }
+        }
+
+        &.path-right-to-left {
+          margin: 0;
+          margin-left: 20px;
+          &:before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            width: 70px;
+            height: 7px;
+            background-color: $road-path-color;
+            left: -65px;
+
+            // @include bp-lg {
+            //   width: 50px;
+            //   left: -43px;
+            // }
+          }
+        }
+      }
+    }
+
+    .steps {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $road-path-color;
+      color: #fff;
+      left: 35px;
+      top: -35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999999;
+      overflow: visible;
+    }
+
+    .content-bx {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $road-path-color;
+      width: 300px;
+      height: 300px;
+      @include clipPath($roadPathClipPath);
+
+      .content {
+        position: relative;
+        width: 286px;
+        height: 286px;
+        @include clipPath($roadPathClipPath);
+        background: $bg-body;
+        padding-right: 7px;
+        padding-top: 42px;
+        @include font(14px, 600, 1.33, $blue-dark-color);
+        .description {
+          font-size: 11px;
+        }
+      }
+    }
+
+    .info-bx {
+      min-width: 320px;
+      width: 320px;
+      max-width: 320px;
+      margin: 0;
+      margin-left: 89px;
+      @include bp-lg {
+        padding-left: 30px;
+      }
+
+      .hint {
+        position: relative;
+        @include font(14px, 600, 1.33, $blue-dark-color);
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background-image: url("./../../images/alert.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          top: 0px;
+          left: -24px;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          position: relative;
+          margin: 25px 0;
+          font-weight: 600;
+          color: $blue-dark-color;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url("./../../images/circle-shape.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 0px;
+            left: -24px;
+          }
+        }
+      }
+    }
+  }
+
+  .content-img-bx {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: -30px;
+
+    .shovel-img {
+      width: 266px;
+    }
+    .tab-img {
+      width: 240px;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */

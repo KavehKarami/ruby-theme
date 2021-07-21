@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruby on Rails</title>
+    <link href="styles/vendors/bootstrap5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/css/shared.css" type="text/css" />
+    <link rel="stylesheet" href="styles/css/blog.css" type="text/css" />
+  </head>
+  <body>
+    <!-- ------------------------------- Navbar -------------------------------- -->
+    <nav class="navbar">
+      <div class="container px-4 px-md-0 px-lg-4">
+        <a class="navbar-brand logo hasSearch" href="./index.html">
+          <img src="./images/logo.png" alt="logo" class="img-fluid" />
+        </a>
+
+        <div
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobile-menu"
+          aria-controls="mobile-menu"
+          id="hamberger-menu"
+          class="d-md-none"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </div>
+
+        <div class="d-none d-md-flex flex-md-row navbar-nav">
+          <input
+            type="search"
+            placeholder="Browse..."
+            class="me-md-3 me-lg-4 search-input"
+          />
+
+          <a class="me-md-3 me-lg-4 nav-link" href="./services.html">
+            Services
+          </a>
+          <a class="me-md-3 me-lg-4 nav-link active" href="./blog.html">Blog</a>
+          <a class="me-md-3 me-lg-4 nav-link" href="./contact.html">
+            Contact us
+          </a>
+          <a class="me-md-3 me-lg-4 nav-link" href="./about-us.html">
+            About us
+          </a>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#getInTouchModal"
+            class="btn btn-octagonal btn-danger btn-sm pt-2 px-3"
+          >
+            Get in touch!
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- NOTE: Mobile Menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobile-menu"
+      aria-labelledby="monile-menu-header"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+    >
+      <div class="offcanvas-header">
+        <a
+          href="./index.html"
+          class="offcanvas-title text-decoration-none"
+          id="monile-menu-header"
+        >
+          <img
+            width="132px"
+            class="img-fluid"
+            src="./images/logo.png"
+            alt="logo"
+          />
+        </a>
+        <button
+          type="button"
+          class="btn-close text-reset btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about-us.html">About us</a></li>
+          <li><a href="./contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- ----------------- -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ---------------------------- Intro Section ---------------------------- -->
+
+    <section class="container px-4 my-5 blog-intro">
+      <div class="row">
+        <div
+          class="col-12 col-md-6 d-flex flex-column align-items-center mb-5 mb-md-0 mt-md-5"
+        >
+          <div class="why-ruby w-100">
+            <div class="align-self-start ps-3">
+              <img
+                src="./images/alert.png"
+                class="why-ruby-icon"
+                alt="why-ruby-icon"
+              />
+            </div>
+            <p class="m-0 px-4">
+              Why is Ruby on Rails more efficient for business start-ups?
+            </p>
+          </div>
+          <p class="mt-30px blog-header-text mb-4">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita
+          </p>
+
+          <button
+            class="btn btn-octagonal btn-danger text-white mt-3 align-self-md-end"
+          >
+            <span>Continue reading</span>
+            <span>
+              <img
+                class="right-arrow-img ms-2"
+                src="./images/right-arrow.png"
+                alt="arrow-right"
+              />
+            </span>
+          </button>
+        </div>
+
+        <div
+          class="col-12 col-md-6 d-flex justify-content-center align-items-center align-items-md-start mt-3 mt-md-0"
+        >
+          <img class="canvas-img" src="./images/canvas.png" alt="canvas" />
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------- blog cards Section -------------------------- -->
+    <section class="container px-4 my-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="blog-card-box d-flex flex-column align-items-center mb-5">
+            <!-- Blog Card -->
+            <a class="blog-card my-5" href="./article.html">
+              <div class="blog-card-img">
+                <img
+                  class="img-fluid"
+                  src="./images/blog-img.webp"
+                  alt="blog-img"
+                />
+              </div>
+              <div class="blog-card-content p-4 pb-4">
+                <div class="blog-card-title">
+                  <h4 class="text-black mb-4">What is Ruby on Rails?</h4>
+                  <ul class="mb-4">
+                    <li>by Author</li>
+                    <li class="fw-bolder">.</li>
+                    <li>1500 views</li>
+                    <li class="fw-bolder">.</li>
+                    <li>100 comments</li>
+                  </ul>
+                </div>
+                <div class="blog-card-description">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat,
+                </div>
+              </div>
+            </a>
+            <!-- --------- -->
+            <!-- Blog Card -->
+            <a class="blog-card my-5" href="./article.html">
+              <div class="blog-card-img">
+                <img
+                  class="img-fluid"
+                  src="./images/blog-img.webp"
+                  alt="blog-img"
+                />
+              </div>
+              <div class="blog-card-content p-4 pb-4">
+                <div class="blog-card-title">
+                  <h4 class="text-black mb-4">What is Ruby on Rails?</h4>
+                  <ul class="mb-4">
+                    <li>by Author</li>
+                    <li class="fw-bolder">.</li>
+                    <li>1500 views</li>
+                    <li class="fw-bolder">.</li>
+                    <li>100 comments</li>
+                  </ul>
+                </div>
+                <div class="blog-card-description">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat,
+                </div>
+              </div>
+            </a>
+            <!-- --------- -->
+            <!-- Blog Card -->
+            <a class="blog-card my-5" href="./article.html">
+              <div class="blog-card-img">
+                <img
+                  class="img-fluid"
+                  src="./images/blog-img.webp"
+                  alt="blog-img"
+                />
+              </div>
+              <div class="blog-card-content p-4 pb-4">
+                <div class="blog-card-title">
+                  <h4 class="text-black mb-4">What is Ruby on Rails?</h4>
+                  <ul class="mb-4">
+                    <li>by Author</li>
+                    <li class="fw-bolder">.</li>
+                    <li>1500 views</li>
+                    <li class="fw-bolder">.</li>
+                    <li>100 comments</li>
+                  </ul>
+                </div>
+                <div class="blog-card-description">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat,
+                </div>
+              </div>
+            </a>
+            <!-- --------- -->
+          </div>
+          <!-- Pagination -->
+          <div class="pagionation">
+            <div
+              class="d-flex justify-content-center align-items-center d-md-none"
+            >
+              <button
+                class="btn btn-sm btn-outline-octagonal btn-danger"
+                disabled
+              >
+                <div class="px-4 btn-outline-octagonal-content">PREVIOUS</div>
+              </button>
+
+              <button class="ms-3 btn btn-sm btn-outline-octagonal btn-danger">
+                <div class="px-4 btn-outline-octagonal-content">Next</div>
+              </button>
+            </div>
+
+            <div
+              class="mt-5 pagination-items-box d-flex justify-content-center align-items-center"
+            >
+              <button
+                class="btn btn-sm btn-outline-octagonal btn-danger d-none d-md-flex"
+                disabled
+              >
+                <div class="px-4 btn-outline-octagonal-content">PREVIOUS</div>
+              </button>
+
+              <button class="mx-3 btn btn-sm pagination-item btn-danger active">
+                <div>1</div>
+              </button>
+              <button class="mx-3 btn btn-sm pagination-item btn-danger">
+                <div>2</div>
+              </button>
+              <button class="mx-3 btn btn-sm pagination-item btn-danger">
+                <div>3</div>
+              </button>
+              <button class="mx-3 btn btn-sm pagination-item btn-danger">
+                <div>4</div>
+              </button>
+
+              <button
+                class="ms-3 btn btn-sm btn-outline-octagonal btn-danger d-none d-md-flex"
+              >
+                <div class="px-4 btn-outline-octagonal-content">Next</div>
+              </button>
+            </div>
+          </div>
+          <!-- ---------- -->
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- Footer -------------------------------- -->
+
+    <footer class="container-fluid mx-0">
+      <div class="row">
+        <div class="col-12 col-md-9 footer-details">
+          <div class="row mt-5">
+            <div class="col-6 mt-20px ps-5">
+              <h3 class="text-white mb-5">Logo</h3>
+              <ul class="footer-list">
+                <li><a href="#">Address</a></li>
+                <li><a href="#">Tel.</a></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="footer-list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Hire a programmer</a></li>
+                <li><a href="#">Join us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="my-5 text-center d-flex align-items-center justify-content-center d-md-none"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+                />
+              </a>
+            </div>
+            <div class="mx-3">
+              <a href="#">
+                <img class="img-fluid" src="./images/github.png" alt="github" />
+              </a>
+            </div>
+          </div>
+
+          <small
+            class="text-center text-white d-block my-5 pt-5 pt-md-0 mt-md-4 mb-md-5 text-md-start ps-md-4"
+          >
+            Ruby on Rails 2021 All rights reserved.
+          </small>
+        </div>
+        <div class="d-none d-md-flex col-md-3 p-0 justify-content-center">
+          <div
+            class="text-center d-flex align-items-center justify-content-center mt-5"
+          >
+            <div class="mx-3">
+              <a href="#"
+                ><img
+                  class="img-fluid"
+                  src="./images/twitter.png"
+                  alt="twitter"
+              /></a>
+            </div>
+            <div class="mx-3">
+              <a href="#"
+                ><img class="img-fluid" src="./images/github.png" alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------- Get in Touch Modal -------------------------- -->
+    <div
+      class="modal fade"
+      id="getInTouchModal"
+      tabindex="-1"
+      aria-labelledby="getInTouchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header px-5">
+            <h5 class="modal-title" id="getInTouchModalLabel">Get in touch!</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="px-4">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label text-white"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label text-white"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="messageInput" class="form-label text-white"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="6"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-octagonal btn-danger mb-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ------------------------------- scripts ------------------------------- -->
+    <script src="./scripts/vendors/bootstrap5.min.js"></script>
+    <!-- ----------------------------------------------------------------------- -->
+  </body>
+</html>
